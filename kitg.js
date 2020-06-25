@@ -558,7 +558,7 @@ function autoCraft2() {
                     "pasture" : gamePage.bld.getBuildingExt('pasture').meta.stage == 1 ? 0.01 : 1,
                     "aqueduct" : gamePage.bld.getBuildingExt('aqueduct').meta.stage == 1 ? 0.01 : 1,
                     "amphitheatre" : gamePage.bld.getBuildingExt("amphitheatre").meta.stage == 1 ? 0.01 : gamePage.resPool.get('parchment').value > 0 ? 1 : 0.00000001,
-                   "ziggurat" : 0)
+                   "ziggurat" : 0
                 };
 		    //  "factory"  : gamePage.resPool.get("titanium").value > 100 ? 3 : 0.00000001,
 		      // "ziggurat" : gamePage.bld.getBuildingExt('ziggurat').meta.val > 100 ? 1 :  gamePage.bld.getBuildingExt('ziggurat').meta.val < 20 ? 1 : (gamePage.resPool.get("blueprint").value > 500 ? 0.01 : 0.00000001)
