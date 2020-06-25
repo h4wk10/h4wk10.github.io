@@ -545,7 +545,8 @@ function autoCraft2() {
                     "mansion" :  gamePage.resPool.get("titanium").value > 100 ? 1.5 : 0.00000001,
                     "steamworks" : gamePage.bld.getBuildingExt('magneto').meta.val > 0 ? 1 : 0.00000001,
                     "magneto" : gamePage.resPool.get("titanium").value > 50 ? 1 : 0.00000001,
-                    "factory"  : gamePage.resPool.get("titanium").value > 100 ? 3 : 0.00000001,
+//                     "factory"  : gamePage.resPool.get("titanium").value > 100 ? 3 : 0.00000001,
+		    "factory"  : 0,
                     "reactor" : gamePage.resPool.get("titanium").value > 100 ? 10 : 0.00000001,
                     "warehouse" : 0.01,
                     "harbor" : (gamePage.bld.getBuildingExt('harbor').meta.val > 100 || (gamePage.resPool.get("ship").value > 0 && gamePage.resPool.get("plate").value > gamePage.bld.getPrices('harbor')[2].val)) ? 1 : 0.001,
@@ -559,7 +560,7 @@ function autoCraft2() {
                     "aqueduct" : gamePage.bld.getBuildingExt('aqueduct').meta.stage == 1 ? 0.01 : 1,
                     "amphitheatre" : gamePage.bld.getBuildingExt("amphitheatre").meta.stage == 1 ? 0.01 : gamePage.resPool.get('parchment').value > 0 ? 1 : 0.00000001,
                     // "ziggurat" : gamePage.bld.getBuildingExt('ziggurat').meta.val > 100 ? 1 :  gamePage.bld.getBuildingExt('ziggurat').meta.val < 20 ? 1 : (gamePage.resPool.get("blueprint").value > 500 ? 0.01 : 0.00000001)
-                    "ziggurat" : gamePage.bld.getBuildingExt('ziggurat').meta.val > 100 ? 0 :  gamePage.bld.getBuildingExt('ziggurat').meta.val < 20 ? 0 : (gamePage.resPool.get("blueprint").value > 500 ? 0.01 : 0)
+                    "ziggurat" : 0)
                 };
                 var allblds = gamePage.tabs[0].buttons.filter(res => res.model.metadata && res.model.metadata.unlocked && !res.model.resourceIsLimited)
                 var prior = [];
